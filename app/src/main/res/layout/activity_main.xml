@@ -63,7 +63,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="btnClick_backspace"
-            android:text="a"
+            android:text="."
             android:textAllCaps="false"
             android:textColor="@color/colorSecondaryLite"
             android:textSize="24sp"
