@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="9"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center|end"
+        android:hint="0"
+        android:maxLength="15"
+        android:padding="10dp"
+        android:textColor="@color/colorTextonPrimary"
+        android:textColorHint="@color/colorTextonSecondary"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/sign"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center|end"
+        android:hint="0"
+        android:padding="10dp"
+        android:textColor="@color/colorTextonPrimary"
+        android:textColorHint="@color/colorTextonSecondary"
+        android:textSize="30sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorSecondaryLite"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/AC"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:onClick="btnClick_AC"
+            android:text="AC"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextonSecondary"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/backspace"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="btnClick_backspace"
+            android:text="a"
+            android:textAllCaps="false"
+            android:textColor="@color/colorSecondaryLite"
+            android:textSize="24sp"
+            app:icon="@android:drawable/ic_input_delete"
+            app:iconSize="38dp" />
+
+        <Button
+            android:id="@+id/divide"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="btnClick_divide"
+            android:text="/"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextonSecondary"
+            android:textSize="24sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorSecondaryLite"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/seven"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:onClick="btnClick_7"
+            android:text="7"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextonSecondary"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/eight"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:onClick="btnClick_8"
+            android:text="8"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextonSecondary"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/nine"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:onClick="btnClick_9"
+            android:text="9"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextonSecondary"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/multiple"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:onClick="btnClick_multiple"
+            android:text="x"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextonSecondary"
+            android:textSize="24sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorSecondaryLite"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/four"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:onClick="btnClick_4"
+            android:text="4"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextonSecondary"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/five"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:onClick="btnClick_5"
+            android:text="5"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextonSecondary"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/six"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:onClick="btnClick_6"
+            android:text="6"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextonSecondary"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/minus"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:onClick="btnClick_minus"
+            android:text="-"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextonSecondary"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorSecondaryLite"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/one"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:onClick="btnClick_1"
+            android:text="1"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextonSecondary"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/two"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:onClick="btnClick_2"
+            android:text="2"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextonSecondary"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/three"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:onClick="btnClick_3"
+            android:text="3"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextonSecondary"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/sum"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:onClick="btnClick_sum"
+            android:text="+"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextonSecondary"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorSecondaryLite"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/zero"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:onClick="btnClick_0"
+            android:text="0"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextonSecondary"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/dot"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="btnClick_dot"
+            android:text="."
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextonSecondary"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/equal"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:onClick="btnClick_equal"
+            android:text="="
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextonSecondary"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
