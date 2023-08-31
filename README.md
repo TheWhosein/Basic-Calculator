@@ -1,4 +1,4 @@
-# Basic-Calculator
+# Basic-Calculator-Android
 The Calculator App is a simple Android application built using Java and Android Studio. This app allows users to perform basic arithmetic calculations on their Android devices.
 
 ## Features
